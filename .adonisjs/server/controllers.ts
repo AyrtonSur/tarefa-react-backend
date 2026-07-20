@@ -8,6 +8,7 @@ export const controllers = {
   AccountFavorites: () => import('#controllers/account_favorites_controller'),
   AccountReviews: () => import('#controllers/account_reviews_controller'),
   AccountWatched: () => import('#controllers/account_watched_controller'),
+  Docs: () => import('#controllers/docs_controller'),
   Genres: () => import('#controllers/genres_controller'),
   Movies: () => import('#controllers/movies_controller'),
   NewAccount: () => import('#controllers/new_account_controller'),

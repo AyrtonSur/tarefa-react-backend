@@ -2,6 +2,8 @@
 
 Backend REST API for the Film{IN}hos app (a Letterboxd-style movie review site). Built with AdonisJS 6.
 
+> Live docs: run the server and visit `/docs` for a browsable HTML reference (every route, params, and every possible response), or `/docs.json` for the raw spec. Source of truth lives in `app/docs/api_docs.ts`.
+
 - Base URL: `/api/v1`
 - All responses are wrapped as `{ "data": ... }`. Paginated list endpoints additionally include a `metadata` object.
 - Authentication is via Bearer tokens (`Authorization: Bearer <token>`), obtained from `/auth/signup` or `/auth/login`.

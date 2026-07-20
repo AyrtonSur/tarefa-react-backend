@@ -4,6 +4,8 @@ type ParamValue = string | number | bigint | boolean
 
 export type ScannedRoutes = {
   ALL: {
+    'docs.show': { paramsTuple?: []; params?: {} }
+    'docs.json': { paramsTuple?: []; params?: {} }
     'auth.new_account.store': { paramsTuple?: []; params?: {} }
     'auth.access_tokens.store': { paramsTuple?: []; params?: {} }
     'profile.profile.show': { paramsTuple?: []; params?: {} }
@@ -38,6 +40,8 @@ export type ScannedRoutes = {
     'account.account_reviews.index': { paramsTuple?: []; params?: {} }
   }
   GET: {
+    'docs.show': { paramsTuple?: []; params?: {} }
+    'docs.json': { paramsTuple?: []; params?: {} }
     'profile.profile.show': { paramsTuple?: []; params?: {} }
     'genres.index': { paramsTuple?: []; params?: {} }
     'genres.show': { paramsTuple: [ParamValue]; params: {'id': ParamValue} }
@@ -56,6 +60,8 @@ export type ScannedRoutes = {
     'account.account_reviews.index': { paramsTuple?: []; params?: {} }
   }
   HEAD: {
+    'docs.show': { paramsTuple?: []; params?: {} }
+    'docs.json': { paramsTuple?: []; params?: {} }
     'profile.profile.show': { paramsTuple?: []; params?: {} }
     'genres.index': { paramsTuple?: []; params?: {} }
     'genres.show': { paramsTuple: [ParamValue]; params: {'id': ParamValue} }

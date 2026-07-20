@@ -15,6 +15,9 @@ router.get('/', () => {
   return { hello: 'world' }
 })
 
+router.get('/docs', [controllers.Docs, 'show'])
+router.get('/docs.json', [controllers.Docs, 'json'])
+
 router
   .group(() => {
     router
